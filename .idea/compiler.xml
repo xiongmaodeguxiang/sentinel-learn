@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="sentinel-token-client-2" />
+        <module name="sentinel-token-client-1" />
+        <module name="sentinel-flow-control" />
+        <module name="sentinel-token-server-stand" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="sentinel-token-server" target="1.8" />
+      <module name="sentinel-token-server-alone" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
