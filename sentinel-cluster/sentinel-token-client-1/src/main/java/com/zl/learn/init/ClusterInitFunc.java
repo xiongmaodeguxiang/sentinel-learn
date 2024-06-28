@@ -44,9 +44,11 @@ public class ClusterInitFunc implements InitFunc {
 
     private final String flowDataId = APP_NAME +"-flow-rules";
     private final String paramDataId = APP_NAME + "-param-rules";
-    private final String configDataId = APP_NAME + "-cluster-client-config";
-    private final String clusterMapDataId = APP_NAME + "-cluster-map";
-    private final String clusterStateDataId = APP_NAME + "-cluster-state";
+//    private final String configDataId = APP_NAME + "-cluster-client-config";
+    private final String configDataId = "group1" + "-cluster-client-config";
+//    private final String clusterMapDataId = "group1" + "-cluster-map";
+    private final String clusterTokenServer = "group1" + "-ref-token-server";
+//    private final String clusterStateDataId = APP_NAME + "-cluster-state";
 
     @Override
     public void init() throws Exception {
@@ -61,19 +63,20 @@ public class ClusterInitFunc implements InitFunc {
     }
     public void initStateConfig() {
         ReadableDataSource<String, Integer> stateDataSource =  new NacosDataSource<Integer>(remoteAddress,
-                groupId, clusterStateDataId, source -> {
+                groupId, clusterTokenServer, source -> {
             if(StringUtil.isEmpty(source)){
                 return ClusterStateManager.CLUSTER_NOT_STARTED;
             }
-
-            return Integer.valueOf(source);
+            JSONObject jsonObject = JSON.parseObject(source);
+            Integer mode = jsonObject.getInteger("mode");
+            return mode;
         });
         ClusterStateManager.registerProperty(stateDataSource.getProperty());
     }
 
     private void initClusterServerAssignConfig() {
         ReadableDataSource<String, ClusterClientAssignConfig> clusterConfigDataSource =  new NacosDataSource<>(remoteAddress,
-                groupId, clusterMapDataId, source -> {
+                groupId, clusterTokenServer, source -> {
             ClusterClientAssignConfig clusterClientAssignConfig = JSON.parseObject(source, new TypeReference<ClusterClientAssignConfig>(){});
             System.out.println("clusterClientAssignConfig变为了："+ source);
             return clusterClientAssignConfig;
