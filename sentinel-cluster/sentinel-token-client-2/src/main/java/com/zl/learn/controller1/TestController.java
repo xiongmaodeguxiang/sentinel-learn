@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     @GetMapping("/test")
-    @SentinelResource("flow-test-1")
+    @SentinelResource("flow-test-2")
     public String test(){
         System.out.println("hello");
         return "hello";
