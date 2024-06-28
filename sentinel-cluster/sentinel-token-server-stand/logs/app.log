@@ -617,3 +617,72 @@
 2024-06-28 16:39:49.896 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x451df4ae, L:/0:0:0:0:0:0:0:0:9000] READ: [id: 0x1fdfa8fc, L:/192.168.28.5:9000 - R:/192.168.28.5:49496]
 2024-06-28 16:39:49.897 [nioEventLoopGroup-2-1] WARN  io.netty.bootstrap.ServerBootstrap - Unknown channel option 'SO_TIMEOUT' for channel '[id: 0x1fdfa8fc, L:/192.168.28.5:9000 - R:/192.168.28.5:49496]'
 2024-06-28 16:39:49.910 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x451df4ae, L:/0:0:0:0:0:0:0:0:9000] READ COMPLETE
+2024-06-28 16:45:51.736 [Thread-3] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2024-06-28 16:45:51.768 [Thread-3] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2024-06-28 16:51:13.405 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+2024-06-28 16:51:13.458 [main] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+2024-06-28 16:51:13.492 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2024-06-28 16:51:13.492 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2024-06-28 16:51:13.505 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+2024-06-28 16:51:13.506 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+2024-06-28 16:51:13.530 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: MacOS
+2024-06-28 16:51:13.534 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+2024-06-28 16:51:13.534 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 8
+2024-06-28 16:51:13.536 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2024-06-28 16:51:13.537 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+2024-06-28 16:51:13.537 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2024-06-28 16:51:13.538 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+2024-06-28 16:51:13.539 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+2024-06-28 16:51:13.539 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2024-06-28 16:51:13.540 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+2024-06-28 16:51:13.540 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2024-06-28 16:51:13.540 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/sv/j7d3ylt55ml1ppnlw1qrx09c0000gn/T (java.io.tmpdir)
+2024-06-28 16:51:13.540 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2024-06-28 16:51:13.541 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1908932608 bytes
+2024-06-28 16:51:13.542 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2024-06-28 16:51:13.544 [main] DEBUG io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+2024-06-28 16:51:13.544 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2024-06-28 16:51:13.560 [main] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+2024-06-28 16:51:13.616 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2024-06-28 16:51:13.617 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+2024-06-28 16:51:13.619 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+2024-06-28 16:51:13.619 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+2024-06-28 16:51:13.620 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+2024-06-28 16:51:13.620 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+2024-06-28 16:51:13.620 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+2024-06-28 16:51:13.620 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+2024-06-28 16:51:13.620 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+2024-06-28 16:51:13.620 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2024-06-28 16:51:13.620 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+2024-06-28 16:51:13.620 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2024-06-28 16:51:13.620 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+2024-06-28 16:51:13.620 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2024-06-28 16:51:13.654 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 55614 (auto-detected)
+2024-06-28 16:51:13.658 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+2024-06-28 16:51:13.659 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+2024-06-28 16:51:13.663 [main] DEBUG io.netty.util.NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+2024-06-28 16:51:13.666 [main] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+2024-06-28 16:51:13.669 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 38:f9:d3:ff:fe:e2:eb:e9 (auto-detected)
+2024-06-28 16:51:13.709 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+2024-06-28 16:51:13.709 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+2024-06-28 16:51:13.710 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2024-06-28 16:51:13.742 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf11d43a5] REGISTERED
+2024-06-28 16:51:13.744 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf11d43a5] BIND: 0.0.0.0/0.0.0.0:9000
+2024-06-28 16:51:13.748 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf11d43a5, L:/0:0:0:0:0:0:0:0:9000] ACTIVE
+2024-06-28 16:52:44.154 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf11d43a5, L:/0:0:0:0:0:0:0:0:9000] READ: [id: 0x1fd26cac, L:/192.168.28.5:9000 - R:/192.168.28.5:65449]
+2024-06-28 16:52:44.162 [nioEventLoopGroup-2-1] WARN  io.netty.bootstrap.ServerBootstrap - Unknown channel option 'SO_TIMEOUT' for channel '[id: 0x1fd26cac, L:/192.168.28.5:9000 - R:/192.168.28.5:65449]'
+2024-06-28 16:52:44.168 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf11d43a5, L:/0:0:0:0:0:0:0:0:9000] READ COMPLETE
+2024-06-28 16:52:44.200 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2024-06-28 16:52:44.202 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2024-06-28 16:52:44.202 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+2024-06-28 16:52:44.202 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+2024-06-28 16:52:44.202 [nioEventLoopGroup-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.delayedQueue.ratio: 8
+2024-06-28 16:52:44.248 [nioEventLoopGroup-3-1] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+2024-06-28 16:52:44.248 [nioEventLoopGroup-3-1] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+2024-06-28 16:52:44.253 [nioEventLoopGroup-3-1] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@56bafa92
+2024-06-28 16:52:49.307 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf11d43a5, L:/0:0:0:0:0:0:0:0:9000] READ: [id: 0x329392d8, L:/192.168.28.5:9000 - R:/192.168.28.5:65466]
+2024-06-28 16:52:49.308 [nioEventLoopGroup-2-1] WARN  io.netty.bootstrap.ServerBootstrap - Unknown channel option 'SO_TIMEOUT' for channel '[id: 0x329392d8, L:/192.168.28.5:9000 - R:/192.168.28.5:65466]'
+2024-06-28 16:52:49.309 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf11d43a5, L:/0:0:0:0:0:0:0:0:9000] READ COMPLETE
+2024-06-28 16:53:17.327 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf11d43a5, L:/0:0:0:0:0:0:0:0:9000] READ: [id: 0xa55c0ed3, L:/192.168.28.5:9000 - R:/192.168.28.5:65498]
+2024-06-28 16:53:17.330 [nioEventLoopGroup-2-1] WARN  io.netty.bootstrap.ServerBootstrap - Unknown channel option 'SO_TIMEOUT' for channel '[id: 0xa55c0ed3, L:/192.168.28.5:9000 - R:/192.168.28.5:65498]'
+2024-06-28 16:53:17.332 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf11d43a5, L:/0:0:0:0:0:0:0:0:9000] READ COMPLETE
