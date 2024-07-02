@@ -27,27 +27,27 @@ public class InitServerFunc implements InitFunc {
     @Override
     public void init() throws Exception {
 
-        //注册普通集群限流
-        ClusterFlowRuleManager.setPropertySupplier(namespace -> {
-            ReadableDataSource<String, List<FlowRule>> flowRuleSource = new NacosDataSource<>(NACOS_ADDR, NACOS_NAMESPACE, namespace + FLOW_RULE_SUFFIX,
-                    source -> JSON.parseObject(source, new TypeReference<List<FlowRule>>() {}));
-            return flowRuleSource.getProperty();
-        });
-
-        //注册热点参数限流规则
-        ClusterParamFlowRuleManager.setPropertySupplier(namespace -> {
-            ReadableDataSource<String, List<ParamFlowRule>> paramFlowRuleSource = new NacosDataSource<>(NACOS_ADDR, NACOS_NAMESPACE, namespace + PARAM_FLOW_RULE_SUFFIX, source -> JSON.parseObject(source, new TypeReference<List<ParamFlowRule>>() {}));
-            return paramFlowRuleSource.getProperty();
-        });
-
-        //初始化nameSet
-        ReadableDataSource<String, Set<String>> nameSetDataSource = new NacosDataSource<Set<String>>(NACOS_ADDR, NACOS_NAMESPACE, APP_NAME + NAME_SPACE_SET_DATAID_SUFFIX,
-                source -> JSON.parseObject(source, new TypeReference<Set<String>>() {}));
-        ClusterServerConfigManager.registerNamespaceSetProperty(nameSetDataSource.getProperty());
-        //初始化transportConfig
-        ReadableDataSource<String,ServerTransportConfig> serverTransPortDataSource = new NacosDataSource<>(NACOS_ADDR, NACOS_NAMESPACE, APP_NAME + SERVER_TRANSPORT_CONFIG_SUFFIX,
-                source -> JSON.parseObject(source, new TypeReference<ServerTransportConfig>() {}));
-        ClusterServerConfigManager.registerServerTransportProperty(serverTransPortDataSource.getProperty());
+//        //注册普通集群限流
+//        ClusterFlowRuleManager.setPropertySupplier(namespace -> {
+//            ReadableDataSource<String, List<FlowRule>> flowRuleSource = new NacosDataSource<>(NACOS_ADDR, NACOS_NAMESPACE, namespace + FLOW_RULE_SUFFIX,
+//                    source -> JSON.parseObject(source, new TypeReference<List<FlowRule>>() {}));
+//            return flowRuleSource.getProperty();
+//        });
+//
+//        //注册热点参数限流规则
+//        ClusterParamFlowRuleManager.setPropertySupplier(namespace -> {
+//            ReadableDataSource<String, List<ParamFlowRule>> paramFlowRuleSource = new NacosDataSource<>(NACOS_ADDR, NACOS_NAMESPACE, namespace + PARAM_FLOW_RULE_SUFFIX, source -> JSON.parseObject(source, new TypeReference<List<ParamFlowRule>>() {}));
+//            return paramFlowRuleSource.getProperty();
+//        });
+//
+//        //初始化nameSet
+//        ReadableDataSource<String, Set<String>> nameSetDataSource = new NacosDataSource<Set<String>>(NACOS_ADDR, NACOS_NAMESPACE, APP_NAME + NAME_SPACE_SET_DATAID_SUFFIX,
+//                source -> JSON.parseObject(source, new TypeReference<Set<String>>() {}));
+//        ClusterServerConfigManager.registerNamespaceSetProperty(nameSetDataSource.getProperty());
+//        //初始化transportConfig
+//        ReadableDataSource<String,ServerTransportConfig> serverTransPortDataSource = new NacosDataSource<>(NACOS_ADDR, NACOS_NAMESPACE, APP_NAME + SERVER_TRANSPORT_CONFIG_SUFFIX,
+//                source -> JSON.parseObject(source, new TypeReference<ServerTransportConfig>() {}));
+//        ClusterServerConfigManager.registerServerTransportProperty(serverTransPortDataSource.getProperty());
 
     }
 }
