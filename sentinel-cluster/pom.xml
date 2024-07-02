@@ -44,12 +44,12 @@
             </dependency>
             <dependency>
                 <groupId>com.alibaba.csp</groupId>
-                <artifactId>sentinel-cluster-client-default</artifactId>
+                <artifactId>sentinel-cluster-client-nacos-init</artifactId>
                 <version>${sentinel.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.alibaba.csp</groupId>
-                <artifactId>sentinel-cluster-server-default</artifactId>
+                <artifactId>sentinel-cluster-server-nacos-init</artifactId>
                 <version>${sentinel.version}</version>
             </dependency>
             <dependency>

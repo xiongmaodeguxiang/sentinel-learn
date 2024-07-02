@@ -52,14 +52,14 @@ public class ClusterInitFunc implements InitFunc {
 
     @Override
     public void init() throws Exception {
-        //注册flowRule规则的监听
-        initDynamicRule();
-
-        initClusterClientConfig();
-
-        initClusterServerAssignConfig();
-
-        initStateConfig();
+//        //注册flowRule规则的监听
+//        initDynamicRule();
+//
+//        initClusterClientConfig();
+//
+//        initClusterServerAssignConfig();
+//
+//        initStateConfig();
     }
     public void initStateConfig() {
         ReadableDataSource<String, Integer> stateDataSource =  new NacosDataSource<Integer>(remoteAddress,
