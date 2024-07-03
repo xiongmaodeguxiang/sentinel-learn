@@ -1,3 +1,4 @@
+配合改造的sentinel-dashboard可以实现tokenClient自动连接tokenServer的功能，无需手动设置列表
 
 token-client1 的启动参数：
 ```shell
